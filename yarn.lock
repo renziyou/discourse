@@ -469,12 +469,12 @@
   dependencies:
     lodash "^4.17.21"
 
-"@json-editor/json-editor@^2.6.1":
-  version "2.6.1"
-  resolved "https://registry.yarnpkg.com/@json-editor/json-editor/-/json-editor-2.6.1.tgz#169e8b88305d71ccac391c3ae22d4145bc63c9f7"
-  integrity sha512-8jH0n+BLO/jqBCZ3XXaes3NYzvQ+6KfO1p79MsIsTClIi5AvSvEzg3EWk4lsMWrUAFRwcM/CaififsoYDXMdMw==
+"@json-editor/json-editor@^2.10.1":
+  version "2.10.1"
+  resolved "https://registry.yarnpkg.com/@json-editor/json-editor/-/json-editor-2.10.1.tgz#45c995e7756754e939a900048a5261a26b01deb5"
+  integrity sha512-sKV4EEJLSEiv6Sc3iIXRs28tR4L5iQq2NIhWG8AG5zApM1fEWg874Jc6FEoOy7rw3VeSNrxtaFXBkQkXvgbr4A==
   dependencies:
-    core-js "^3.12.1"
+    core-js "^3.27.2"
 
 "@lint-todo/utils@^13.0.3":
   version "13.0.3"
@@ -967,10 +967,10 @@ convert-source-map@^1.7.0:
   dependencies:
     safe-buffer "~5.1.1"
 
-core-js@^3.12.1:
-  version "3.19.3"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.19.3.tgz#6df8142a996337503019ff3235a7022d7cdf4559"
-  integrity sha512-LeLBMgEGSsG7giquSzvgBrTS7V5UL6ks3eQlUSbN8dJStlLFiRzUm5iqsRyzUB8carhfKjkJ2vzKqE6z1Vga9g==
+core-js@^3.27.2:
+  version "3.31.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.31.1.tgz#f2b0eea9be9da0def2c5fece71064a7e5d687653"
+  integrity sha512-2sKLtfq1eFST7l7v62zaqXacPc7uG8ZAya8ogijLhTtaKNcpzpB4TMoTw2Si+8GYKRwFPMMtUT0263QFWFfqyQ==
 
 core-util-is@~1.0.0:
   version "1.0.2"
