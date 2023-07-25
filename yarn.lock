@@ -607,10 +607,10 @@
   dependencies:
     "@types/node" "*"
 
-ace-builds@1.4.13:
-  version "1.4.13"
-  resolved "https://registry.yarnpkg.com/ace-builds/-/ace-builds-1.4.13.tgz#186f42d3849ebcc6a48b93088a058489897514c1"
-  integrity sha512-SOLzdaQkY6ecPKYRDDg+MY1WoGgXA34cIvYJNNoBMGGUswHmlauU2Hy0UL96vW0Fs/LgFbMUjD+6vqzWTldIYQ==
+ace-builds@1.23.1:
+  version "1.23.1"
+  resolved "https://registry.yarnpkg.com/ace-builds/-/ace-builds-1.23.1.tgz#2a1a2c2717c21cfd102f641552cf371ab6bce6e4"
+  integrity sha512-vmLfsfOOvEiQPri2Vz+76FvUalz/nHB7+X2GqonG7rc2V+WrHvqc4xYowt1+fxHH3aWw/pDF2jqKQrd8JNMmiQ==
 
 acorn-jsx@^5.3.2:
   version "5.3.2"
