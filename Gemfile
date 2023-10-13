@@ -110,7 +110,7 @@ gem "thor", require: false
 gem "diffy", require: false
 gem "rinku"
 gem "sidekiq"
-gem "mini_scheduler"
+gem "mini_scheduler", ">= 0.16.0"
 
 gem "execjs", require: false
 gem "mini_racer"
@@ -164,7 +164,7 @@ group :test, :development do
   gem "rubocop-discourse", require: false
   gem "parallel_tests"
 
-  gem "rswag-specs"
+  gem "rswag-specs", ">= 2.11.0"
 
   gem "annotate"
 
