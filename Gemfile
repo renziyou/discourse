@@ -13,7 +13,7 @@ gem "activemodel", "~> 7.1.0"
 gem "activerecord", "~> 7.1.0"
 gem "activesupport", "~> 7.1.0"
 gem "railties", "~> 7.1.0"
-gem "sprockets-rails"
+gem "sprockets-rails", ">= 3.5.2"
 
 gem "json"
 
