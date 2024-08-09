@@ -127,7 +127,7 @@ group :test do
   gem "fakeweb", require: false
   gem "simplecov", require: false
   gem "selenium-webdriver", "~> 4.14", require: false
-  gem "selenium-devtools", require: false
+  gem "selenium-devtools", ">= 0.127.0", require: false
   gem "test-prof"
   gem "rails-dom-testing", require: false
   gem "minio_runner", require: false
