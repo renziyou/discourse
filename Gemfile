@@ -55,7 +55,7 @@ gem "discourse-fonts", require: "discourse_fonts"
 
 gem "message_bus"
 
-gem "rails_multisite"
+gem "rails_multisite", ">= 6.1.0"
 
 gem "fastimage"
 
@@ -151,7 +151,7 @@ group :test, :development do
   gem "rubocop-discourse", require: false
   gem "parallel_tests"
 
-  gem "rswag-specs"
+  gem "rswag-specs", ">= 2.14.0"
 
   gem "annotate"
 
