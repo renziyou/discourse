@@ -126,8 +126,8 @@ group :test do
   gem "webmock", require: false
   gem "fakeweb", require: false
   gem "simplecov", require: false
-  gem "selenium-webdriver", "~> 4.14", require: false
-  gem "selenium-devtools", require: false
+  gem "selenium-webdriver", "~> 4.23", ">= 4.23.0", require: false
+  gem "selenium-devtools", ">= 0.127.0", require: false
   gem "test-prof"
   gem "rails-dom-testing", require: false
   gem "minio_runner", require: false
@@ -203,7 +203,7 @@ gem "rbtrace", require: false, platform: :mri
 gem "ruby-readability", require: false
 
 # rss gem is a bundled gem from Ruby 3 onwards
-gem "rss", require: false
+gem "rss", ">= 0.3.1", require: false
 
 gem "stackprof", require: false, platform: :mri
 gem "memory_profiler", require: false, platform: :mri
