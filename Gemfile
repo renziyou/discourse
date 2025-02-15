@@ -6,7 +6,7 @@ source "https://rubygems.org"
 
 gem "bootsnap", require: false, platform: :mri
 
-gem "actionmailer", "~> 7.1.0"
+gem "actionmailer", "~> 7.2.0"
 gem "actionpack", "~> 7.1.0"
 gem "actionview", "~> 7.1.0"
 gem "activemodel", "~> 7.1.0"
@@ -102,7 +102,7 @@ gem "mini_racer"
 
 gem "highline", require: false
 
-gem "rack"
+gem "rack", ">= 2.2.11"
 
 gem "rack-protection" # security
 gem "cbor", require: false
@@ -111,7 +111,7 @@ gem "addressable"
 gem "json_schemer"
 
 gem "net-smtp", require: false
-gem "net-imap", require: false
+gem "net-imap", ">= 0.4.19", require: false
 gem "net-pop", require: false
 gem "digest", require: false
 
