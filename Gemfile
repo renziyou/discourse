@@ -6,20 +6,20 @@ source "https://rubygems.org"
 
 gem "bootsnap", require: false, platform: :mri
 
-gem "actionmailer", "~> 7.1.0"
-gem "actionpack", "~> 7.1.0"
-gem "actionview", "~> 7.1.0"
+gem "actionmailer", "~> 7.1.4"
+gem "actionpack", "~> 7.1.4"
+gem "actionview", "~> 7.1.4"
 gem "activemodel", "~> 7.1.0"
 gem "activerecord", "~> 7.1.0"
 gem "activesupport", "~> 7.1.0"
-gem "railties", "~> 7.1.0"
-gem "sprockets-rails"
+gem "railties", "~> 7.1.4"
+gem "sprockets-rails", ">= 3.5.2"
 
 gem "json"
 
 # TODO: At the moment Discourse does not work with Sprockets 4, we would need to correct internals
 # We intend to drop sprockets rather than upgrade to 4.x
-gem "sprockets", "~> 3.7.3"
+gem "sprockets", "~> 4.2.0"
 
 # this will eventually be added to rails,
 # allows us to precompile all our templates in the unicorn master
@@ -53,9 +53,9 @@ gem "http_accept_language", require: false
 
 gem "discourse-fonts", require: "discourse_fonts"
 
-gem "message_bus"
+gem "message_bus", ">= 4.3.9"
 
-gem "rails_multisite"
+gem "rails_multisite", ">= 6.1.0"
 
 gem "fastimage"
 
@@ -70,17 +70,17 @@ gem "image_optim"
 gem "multi_json"
 gem "mustache"
 gem "nokogiri"
-gem "loofah"
+gem "loofah", ">= 2.23.0"
 gem "css_parser", require: false
 
-gem "omniauth"
-gem "omniauth-facebook"
+gem "omniauth", ">= 2.1.0"
+gem "omniauth-facebook", ">= 10.0.0"
 gem "omniauth-twitter"
-gem "omniauth-github"
+gem "omniauth-github", ">= 2.0.0"
 
-gem "omniauth-oauth2", require: false
+gem "omniauth-oauth2", ">= 1.8.0", require: false
 
-gem "omniauth-google-oauth2"
+gem "omniauth-google-oauth2", ">= 1.0.0"
 
 gem "oj"
 
@@ -94,8 +94,8 @@ gem "rake"
 gem "thor", require: false
 gem "diffy", require: false
 gem "rinku"
-gem "sidekiq"
-gem "mini_scheduler"
+gem "sidekiq", ">= 7.0.0"
+gem "mini_scheduler", ">= 0.18.0"
 
 gem "execjs", require: false
 gem "mini_racer"
@@ -104,7 +104,7 @@ gem "highline", require: false
 
 gem "rack"
 
-gem "rack-protection" # security
+gem "rack-protection" , ">= 4.0.0" # security
 gem "cbor", require: false
 gem "cose", require: false
 gem "addressable"
@@ -123,13 +123,13 @@ end
 
 group :test do
   gem "capybara", require: false
-  gem "webmock", require: false
+  gem "webmock", ">= 3.24.0", require: false
   gem "fakeweb", require: false
   gem "simplecov", require: false
-  gem "selenium-webdriver", "~> 4.14", require: false
-  gem "selenium-devtools", require: false
+  gem "selenium-webdriver", "~> 4.23", ">= 4.23.0", require: false
+  gem "selenium-devtools", ">= 0.127.0", require: false
   gem "test-prof"
-  gem "rails-dom-testing", require: false
+  gem "rails-dom-testing", ">= 2.3.0", require: false
   gem "minio_runner", require: false
 end
 
@@ -142,16 +142,16 @@ group :test, :development do
 
   gem "rb-fsevent", require: RUBY_PLATFORM =~ /darwin/i ? "rb-fsevent" : false
 
-  gem "rspec-rails"
+  gem "rspec-rails", ">= 6.1.4"
 
   gem "shoulda-matchers", require: false
   gem "rspec-html-matchers"
   gem "pry-stack_explorer", require: false
   gem "byebug", require: ENV["RM_INFO"].nil?, platform: :mri
-  gem "rubocop-discourse", require: false
+  gem "rubocop-discourse", ">= 3.8.2", require: false
   gem "parallel_tests"
 
-  gem "rswag-specs"
+  gem "rswag-specs", ">= 2.14.0"
 
   gem "annotate"
 
@@ -192,7 +192,7 @@ gem "htmlentities", require: false
 #  If you want to amend mini profiler to do the monkey patches in the railties
 #  we are open to it. by deferring require to the initializer we can configure discourse installs without it
 
-gem "rack-mini-profiler", require: ["enable_rails_patches"]
+gem "rack-mini-profiler", ">= 4.0.0", require: ["enable_rails_patches"]
 
 gem "unicorn", require: false, platform: :ruby
 gem "puma", require: false
@@ -200,10 +200,10 @@ gem "puma", require: false
 gem "rbtrace", require: false, platform: :mri
 
 # required for feed importing and embedding
-gem "ruby-readability", require: false
+gem "ruby-readability", ">= 0.7.2", require: false
 
 # rss gem is a bundled gem from Ruby 3 onwards
-gem "rss", require: false
+gem "rss", ">= 0.3.1", require: false
 
 gem "stackprof", require: false, platform: :mri
 gem "memory_profiler", require: false, platform: :mri
@@ -216,7 +216,7 @@ gem "logstash-logger", require: false
 gem "logster"
 
 # A fork of sassc with dart-sass support
-gem "sassc-embedded"
+gem "sassc-embedded", ">= 1.77.8"
 
 gem "rotp", require: false
 
@@ -229,7 +229,7 @@ gem "sshkey", require: false
 gem "rchardet", require: false
 gem "lz4-ruby", require: false, platform: :ruby
 
-gem "sanitize"
+gem "sanitize", ">= 6.1.2"
 
 if ENV["IMPORT"] == "1"
   gem "mysql2"
@@ -254,14 +254,14 @@ gem "web-push"
 gem "colored2", require: false
 gem "maxminddb"
 
-gem "rails_failover", require: false
+gem "rails_failover", ">= 2.2.0", require: false
 
-gem "faraday"
-gem "faraday-retry"
+gem "faraday", ">= 2.10.0"
+gem "faraday-retry", ">= 2.3.0"
 
 # workaround for faraday-net_http, see
 # https://github.com/ruby/net-imap/issues/16#issuecomment-803086765
-gem "net-http"
+gem "net-http", ">= 0.5.0"
 
 # Workaround until Ruby ships with cgi version 0.3.6 or higher.
 gem "cgi", ">= 0.3.6", require: false
