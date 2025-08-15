@@ -10,7 +10,7 @@ gem "actionmailer", "~> 7.1.0"
 gem "actionpack", "~> 7.1.0"
 gem "actionview", "~> 7.1.0"
 gem "activemodel", "~> 7.1.0"
-gem "activerecord", "~> 7.1.0"
+gem "activerecord", "~> 7.1.5", ">= 7.1.5.2"
 gem "activesupport", "~> 7.1.0"
 gem "railties", "~> 7.1.0"
 gem "sprockets-rails"
@@ -55,7 +55,7 @@ gem "discourse-fonts", require: "discourse_fonts"
 
 gem "message_bus"
 
-gem "rails_multisite"
+gem "rails_multisite", ">= 6.1.0"
 
 gem "fastimage"
 
@@ -254,7 +254,7 @@ gem "web-push"
 gem "colored2", require: false
 gem "maxminddb"
 
-gem "rails_failover", require: false
+gem "rails_failover", ">= 2.2.0", require: false
 
 gem "faraday"
 gem "faraday-retry"
