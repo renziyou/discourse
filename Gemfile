@@ -148,7 +148,7 @@ group :test, :development do
   gem "rspec-html-matchers"
   gem "pry-stack_explorer", require: false
   gem "byebug", require: ENV["RM_INFO"].nil?, platform: :mri
-  gem "rubocop-discourse", require: false
+  gem "rubocop-discourse", ">= 3.8.2", require: false
   gem "parallel_tests"
 
   gem "rswag-specs"
